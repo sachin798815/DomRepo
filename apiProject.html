@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="theForm">
+        <label for="itemName">Item Name</label>
+        <input type="text" id="itemName" name="itemName" value="soap">
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" value="sandal">
+        <label for="price">Price</label>
+        <input type="number" min="0" id="price" name="price" value="20">
+        <label for="quantity">Quantity</label>
+        <input type="number" min="0" name="quantity" id="quantity" value="40">
+        <input type="submit" name="addItem" id="addItem" value="Add item">
+    </form>
+
+    <div>
+        <ul id="listContainer">
+
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="apiProject.js"></script>
+</body>
+</html>
